@@ -9,7 +9,7 @@ const helpers = require('./utils/helpers');
 const auth = require('./utils/auth');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/connection');
-const sequelize = new SequelizeStore(process.env.JAWSDB_URL);
+const Sequelize = new SequelizeStore(process.env.JAWSDB_URL);
 
 const app = express();
 const PORT = process.env.PORT ||3001;
